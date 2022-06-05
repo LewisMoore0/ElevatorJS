@@ -11,4 +11,11 @@ describe('Person', () => {
         let person = new Person(1)
         expect(person.currentFloor).toEqual(1)
     })
+
+    test('requestElevator should change elevator current floor to match person current floor', () => {
+        let person = new Person(1)
+        let elevatorMock = { 'currentFloor' : 0 }
+        person.requestElevator(elevatorMock)
+        expect(elevatorMock.currentFloor).toEqual(1)
+    })
 })
