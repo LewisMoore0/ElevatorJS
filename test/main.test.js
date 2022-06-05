@@ -6,4 +6,9 @@ describe('Elevator', () => {
         let elevator = new Elevator()
         expect(elevator).toBeInstanceOf(Elevator)
     })
+
+    test('should have propery currentFloor', () => {
+        let elevator = new Elevator()
+        expect(elevator.currentFloor).toBeDefined()
+    })
 })
