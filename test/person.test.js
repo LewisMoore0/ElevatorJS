@@ -6,4 +6,9 @@ describe('Person', () => {
         let person = new Person()
         expect(person).toBeInstanceOf(Person)
     })
+
+    test('should have current floor property passed in as argument', () => {
+        let person = new Person(1)
+        expect(person.currentFloor).toEqual(1)
+    })
 })
