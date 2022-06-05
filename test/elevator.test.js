@@ -1,4 +1,4 @@
-const Elevator = require("../src/main.js")
+const Elevator = require("../src/elevator.js")
 
 describe('Elevator', () => {
 
