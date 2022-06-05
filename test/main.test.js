@@ -1,7 +1,9 @@
-let elevator = require("../src/main.js")
+const Elevator = require("../src/main.js")
 
 describe('Elevator', () => {
-    test('should return empty object', () => {
-        expect(elevator).toEqual({})
+
+    test('should be an instance of Elevator class', () => {
+        let elevator = new Elevator()
+        expect(elevator).toBeInstanceOf(Elevator)
     })
 })

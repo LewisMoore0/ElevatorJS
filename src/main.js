@@ -1,4 +1,5 @@
-const elevator = {
+class Elevator {
 
 }
-module.export = elevator;
+
+module.exports = Elevator;
