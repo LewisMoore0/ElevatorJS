@@ -4,4 +4,10 @@ const createElevator = () => {
     }
 }
 
-export { createElevator }
+const changeCurrentFloor = (elevator, number) => {
+    elevator.currentFloor = number 
+}
+
+
+
+export { createElevator, changeCurrentFloor }
