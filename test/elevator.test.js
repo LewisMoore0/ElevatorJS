@@ -1,14 +1,8 @@
-const Elevator = require("../src/elevator.js")
+import { createElevator } from '../src/elevator'
 
 describe('Elevator', () => {
 
     test('should be an instance of Elevator class', () => {
-        let elevator = new Elevator()
-        expect(elevator).toBeInstanceOf(Elevator)
-    })
-
-    test('should have propery currentFloor', () => {
-        let elevator = new Elevator()
-        expect(elevator.currentFloor).toBeDefined()
+        expect(createElevator()).toEqual({})
     })
 })

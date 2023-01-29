@@ -1,7 +1,7 @@
-class Elevator {
-    constructor() {
-        this.currentFloor = 0
+const createElevator = () => {
+    return {
+
     }
 }
 
-module.exports = Elevator;
+export { createElevator }
