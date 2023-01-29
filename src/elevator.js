@@ -1,6 +1,6 @@
 const createElevator = () => {
     return {
-
+        currentFloor: 0
     }
 }
 
