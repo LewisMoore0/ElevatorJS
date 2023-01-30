@@ -1,6 +1,7 @@
 let createNewPerson = (number) => {
     return {
-        currentFloor: number
+        currentFloor: number,
+        desiredFloor: 0
     }
 }
 
