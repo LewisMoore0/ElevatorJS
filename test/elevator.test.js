@@ -1,5 +1,4 @@
-import { createElevator, changeCurrentFloor, addPeopleToElevator } from '../src/elevator'
-import { createNewPerson } from '../src/person'
+import { createElevator, changeCurrentFloor } from '../src/elevator'
 
 describe('Elevator', () => {
 
