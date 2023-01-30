@@ -1,11 +1,12 @@
 import { createElevator, changeCurrentFloor, addPeopleToElevator } from '../src/elevator'
+import { createNewPerson } from '../src/person'
 
 describe('Elevator', () => {
 
     test('should have a default currentFloor and numberOfPeople props', () => {
         expect(createElevator()).toEqual({
             currentFloor: 0,
-            numberOfPeople: 0
+            numberOfPeople: []
         })
     })
 
@@ -18,11 +19,5 @@ describe('Elevator', () => {
         let elevator = createElevator()
         changeCurrentFloor(elevator, 1)
         expect(elevator.currentFloor).toEqual(1)
-    })
-
-    test('when addPeopleToElevator is called, numberOfPeople should update to the same value', () => {
-        let elevator = createElevator()
-        addPeopleToElevator(elevator, 2)
-        expect(elevator.numberOfPeople).toEqual(2)
     })
 })

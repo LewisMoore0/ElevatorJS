@@ -10,4 +10,12 @@ describe('callElevator', () => {
         callElevator(elevator, person)
         expect(person.currentFloor).toEqual(elevator.currentFloor)
     })
+
+    test('should add person object to elevator.numberOfPeople array', () => {
+        let elevator = createElevator()
+        let person = createNewPerson(1)
+
+        callElevator(elevator, person)
+        expect(elevator.numberOfPeople).toEqual([ person ])
+    })
 })

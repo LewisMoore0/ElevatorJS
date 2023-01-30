@@ -1,7 +1,7 @@
 const createElevator = () => {
     return {
         currentFloor: 0,
-        numberOfPeople: 0
+        numberOfPeople: []
     }
 }
 
@@ -9,10 +9,5 @@ const changeCurrentFloor = (elevator, number) => {
     elevator.currentFloor = number 
 }
 
-const addPeopleToElevator = (elevator, number) => {
-    elevator.numberOfPeople = number
-}
 
-
-
-export { createElevator, changeCurrentFloor,addPeopleToElevator }
+export { createElevator, changeCurrentFloor }
